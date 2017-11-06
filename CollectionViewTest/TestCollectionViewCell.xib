@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="TestCollectionViewCell" customModule="CollectionViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mP8-hc-MCy" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="85o-Xf-mfM">
+                                <rect key="frame" x="20" y="48" width="130" height="74"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pm7-Tk-CjN">
+                                        <rect key="frame" x="43" y="0.0" width="44.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="h9z-ut-6lp"/>
+                                            <constraint firstAttribute="width" secondItem="Pm7-Tk-CjN" secondAttribute="height" multiplier="1:1" id="wjB-tH-YsM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoa-jV-Kmy">
+                                        <rect key="frame" x="0.0" y="55" width="130" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xoa-jV-Kmy" firstAttribute="leading" secondItem="85o-Xf-mfM" secondAttribute="leading" id="0N4-QE-ubK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xoa-jV-Kmy" secondAttribute="trailing" id="yrk-V8-b5E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="85o-Xf-mfM" firstAttribute="leading" secondItem="mP8-hc-MCy" secondAttribute="leading" constant="20" id="HFs-RV-m20"/>
+                            <constraint firstItem="85o-Xf-mfM" firstAttribute="centerY" secondItem="mP8-hc-MCy" secondAttribute="centerY" id="TW0-rn-MKT"/>
+                            <constraint firstItem="85o-Xf-mfM" firstAttribute="centerX" secondItem="mP8-hc-MCy" secondAttribute="centerX" id="b6L-Na-vfe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mP8-hc-MCy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bll-Fw-gAk"/>
+                <constraint firstAttribute="bottom" secondItem="mP8-hc-MCy" secondAttribute="bottom" id="Bqn-Mv-iv0"/>
+                <constraint firstAttribute="trailing" secondItem="mP8-hc-MCy" secondAttribute="trailing" id="jiw-ac-Vlc"/>
+                <constraint firstItem="mP8-hc-MCy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kFV-NS-4K9"/>
+            </constraints>
+            <size key="customSize" width="165" height="145"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="iconImageView" destination="Pm7-Tk-CjN" id="bRy-Si-KE5"/>
+                <outlet property="nameLabel" destination="Xoa-jV-Kmy" id="Vog-fE-Qgo"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="101"/>
+        </collectionViewCell>
+    </objects>
+</document>
